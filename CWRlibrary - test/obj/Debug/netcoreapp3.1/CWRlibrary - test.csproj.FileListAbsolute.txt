@@ -1,0 +1,14 @@
+G:\progect c#\CWRlibrary - test\bin\Debug\netcoreapp3.1\CWRlibrary - test.exe
+G:\progect c#\CWRlibrary - test\bin\Debug\netcoreapp3.1\CWRlibrary - test.deps.json
+G:\progect c#\CWRlibrary - test\bin\Debug\netcoreapp3.1\CWRlibrary - test.runtimeconfig.json
+G:\progect c#\CWRlibrary - test\bin\Debug\netcoreapp3.1\CWRlibrary - test.runtimeconfig.dev.json
+G:\progect c#\CWRlibrary - test\bin\Debug\netcoreapp3.1\CWRlibrary - test.dll
+G:\progect c#\CWRlibrary - test\bin\Debug\netcoreapp3.1\CWRlibrary - test.pdb
+G:\progect c#\CWRlibrary - test\obj\Debug\netcoreapp3.1\CWRlibrary - test.csproj.AssemblyReference.cache
+G:\progect c#\CWRlibrary - test\obj\Debug\netcoreapp3.1\CWRlibrary - test.GeneratedMSBuildEditorConfig.editorconfig
+G:\progect c#\CWRlibrary - test\obj\Debug\netcoreapp3.1\CWRlibrary - test.AssemblyInfoInputs.cache
+G:\progect c#\CWRlibrary - test\obj\Debug\netcoreapp3.1\CWRlibrary - test.AssemblyInfo.cs
+G:\progect c#\CWRlibrary - test\obj\Debug\netcoreapp3.1\CWRlibrary - test.csproj.CoreCompileInputs.cache
+G:\progect c#\CWRlibrary - test\obj\Debug\netcoreapp3.1\CWRlibrary - test.dll
+G:\progect c#\CWRlibrary - test\obj\Debug\netcoreapp3.1\CWRlibrary - test.pdb
+G:\progect c#\CWRlibrary - test\obj\Debug\netcoreapp3.1\CWRlibrary - test.genruntimeconfig.cache

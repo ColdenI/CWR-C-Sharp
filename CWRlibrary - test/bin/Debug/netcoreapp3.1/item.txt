@@ -1,0 +1,6 @@
+
+
+
+<item_4>CWR Item</item_4>
+<item_3>123</item_3>
+<item_2>0,1234</item_2>
