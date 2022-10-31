@@ -76,9 +76,9 @@ namespace CWR
             WriteFile(Text);
         }
 
-        public void Append(string text)
+        public void Append(string Text)
         {
-            WriteFileAppend(text);
+            WriteFileAppend(Text);
         }
     }
 
@@ -90,11 +90,11 @@ namespace CWR
 
         public string[] GetItems()
         {
-            string[] i_item_1_a = ReadFile().Split("</");
+            string[] i_item_1_a = ReadFile().Split(new[]{"</"}, StringSplitOptions.None);
             List<string> i_item_1_l = new List<string>();
 
             foreach (string i in i_item_1_a)
-                i_item_1_l.Add(i.Split(">")[0]);
+                i_item_1_l.Add(i.Split(new[]{">"}, StringSplitOptions.None)[0]);
 
             i_item_1_l.RemoveAt(0);
             string[] i_item_2_a = new string[i_item_1_l.Count];
@@ -121,7 +121,7 @@ namespace CWR
         {
             if (this.ContainsItem(name)) {
                 //Console.WriteLine(this.ReadFile().ToString().Normalize().Split("<" + name + ">")[0] + this.ReadFile().ToString().Normalize().Split("</" + name + ">")[1]);
-                this.WriteFile(this.ReadFile().ToString().Normalize().Split("<" + name + ">")[0] + this.ReadFile().ToString().Normalize().Split("</" + name + ">")[1]);
+                this.WriteFile(this.ReadFile().ToString().Normalize().Split(new[]{"<" + name + ">"}, StringSplitOptions.None)[0] + this.ReadFile().ToString().Normalize().Split(new[]{"</" + name + ">"}, StringSplitOptions.None)[1]);
             }
         }
 
@@ -133,7 +133,7 @@ namespace CWR
 
         public string  GetItemString  (string Item)
         {
-            return ReadFile().Split("<" + Item + ">")[1].Split("</" + Item + ">")[0];
+            return ReadFile().Split(new[]{"<" + Item + ">" }, StringSplitOptions.None)[1].Split(new[]{"</" + Item + ">" }, StringSplitOptions.None)[0];
         }
         public char    GetItemChar    (string Item)
         {
@@ -251,7 +251,7 @@ namespace CWR
         public void SetItem(string Item, string  Value)
         {
             if (this.ContainsItem(Item))
-                this.WriteFile(this.ReadFile().Split("<" + Item + ">")[0] + "<" + Item + ">" + Value + "</" + Item + ">" + this.ReadFile().Split("</" + Item + ">")[1] + "");
+                this.WriteFile(this.ReadFile().Split(new[]{"<" + Item + ">" }, StringSplitOptions.None)[0] + "<" + Item + ">" + Value + "</" + Item + ">" + this.ReadFile().Split(new[]{"</" + Item + ">" }, StringSplitOptions.None)[1] + "");
         }
         public void SetItem(string Item, char    Value)
         {
